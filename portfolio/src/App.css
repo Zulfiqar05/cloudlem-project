@@ -1,0 +1,372 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  background-color: #0d0f0f;  
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  /* background: #ffffff; */
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+
+  
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .logo{
+  font-weight: bolder;
+  font-size: 25px;
+
+}
+/* .navbar{
+} */
+header .navbar ul{
+  list-style: none;
+
+}
+header .navbar ul li{
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a{
+font-size: 20px;
+padding: 20px;
+color: #2AB4A9;
+display: block;
+}
+
+header .navbar ul li a:hover{
+  background: #333;
+  color: #fff;
+}
+header .navbar ul li ul{
+  position: absolute;
+  left:0;
+  width:200px;
+  background: #fff;
+  display: none;
+}
+header .navbar ul li ul li{
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+  left: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul{
+  display: initial;
+}
+
+#menu-bar{
+  display: none;
+}
+
+header label{
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+@media(max-width:991px){
+
+  header{
+      padding: 20px;
+  }
+
+  header label{
+      display: initial;
+  }
+  header .navbar{
+      position: absolute;
+      top: 100%; left:0; right:0;
+      background: #fff;
+      border-top: 1px solid rgba(0,0,0,.1);
+      display: none;
+  }
+  header .navbar ul li{
+      width: 100%;
+  }
+  header .navbar ul li ul{
+      position: relative;
+      width: 100%;
+  }
+  header .navbar ul li ul li{
+      background: #eee;
+  }
+  header .navbar ul li ul li ul{
+      width: 100%;
+      left: 0;
+  }
+  #menu-bar:checked ~ .navbar{
+      display: initial;
+  }
+
+  .sub-text{
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      
+  }
+  .img-1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+  }
+}
+
+
+.navbar button{
+  color: #2AB4A9;
+  width: 120px;
+  height: 6vh;
+
+  background-color: rgb(89, 132, 218);
+  
+}
+
+
+.text-section{
+  margin-top: 200px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+.text-section img{
+  width: 50%;
+  border-radius: 80px;
+  /* margin-left: 90px; */
+}
+.text-section .para{
+  margin-top: 30px;
+}
+.text-section p{
+  margin-top: 17px;
+}
+.text-section .buttondiv button{
+  border-radius: 10px;
+  background-color: chocolate;
+
+}
+.text-section .buttondiv button:hover{
+  background-color:#2AB4A9
+}
+.text-section .buttondiv input{
+  margin-top: 30px;
+}
+
+.sub-text h1{
+  color: #2AB4A9
+}
+.sub-text p{
+  color: chocolate;
+}
+.text-section button{
+  margin-top: 30px;
+  height: 6vh;
+  width: 120px;
+  margin-left: 20px;
+  background-color: rgb(89, 132, 218);
+  color: #fff;
+
+}
+.text-section input{
+  height: 6vh;
+  background-color: #eee;
+}
+.sub-text{
+  display: flex;
+  justify-content: space-around;
+  gap: 200px;
+  margin-top: 200px;
+}
+
+
+
+
+/* Main Section */
+
+.Sub-cont .Text-main h1{
+  color: #2AB4A9;
+  text-align: center;
+  margin-top: 40px;
+}
+.Cards-main{
+  display: flex;
+  gap: 250px;
+  width: 95%;
+  margin: 0 auto;
+  /* margin-left: 50px; */
+}
+.Sub-cont .Cards-main .card-1{
+  width: 20%;
+  border: 2px solid chocolate;
+  height: 40vh;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.Sub-cont .Cards-main .card-1:hover{
+  background-color: blue;
+  transition: all 1.5s;
+}
+.Sub-cont .Cards-main .card-1 h2,p:hover{
+  background-color: blue;
+}
+.Sub-cont .Cards-main .card-1 h2{
+  margin-top: 25px;
+  color: #eee;
+}
+.Sub-cont .Cards-main .card-1 p{
+  margin-top: 25px;
+  color: #eee;
+  line-height: 28px;
+}
+.Sub-cont .Cards-main .card-1 button{
+  margin-top: 30px;
+  background-color: chocolate;
+  border-radius: 10px;
+  width: 100px;
+  height: 5vh;
+}
+.Sub-cont .Cards-main .card-1 button:hover{
+  background-color: #2AB4A9;
+  cursor: pointer;
+}
+
+
+/* Card-2 */
+
+.Sub-cont .Text-main h1{
+  color: #2AB4A9;
+  text-align: center;
+  margin-top: 40px;
+}
+.Sub-cont .Cards-main .card-2{
+  width: 20%;
+  border: 2px solid chocolate;
+  height: 40vh;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.Sub-cont .Cards-main .card-2:hover{
+  background-color: blue;
+  transition: all 1.5s;
+}
+.Sub-cont .Cards-main .card-2 h2,p:hover{
+  background-color: blue;
+}
+.Sub-cont .Cards-main .card-2 h2{
+  margin-top: 25px;
+  color: #eee;
+}
+.Sub-cont .Cards-main .card-2 p{
+  margin-top: 25px;
+  color: #eee;
+  line-height: 28px;
+}
+.Sub-cont .Cards-main .card-2 button{
+  margin-top: 30px;
+  background-color: chocolate;
+  border-radius: 10px;
+  width: 100px;
+  height: 5vh;
+}
+.Sub-cont .Cards-main .card-2 button:hover{
+  background-color: #2AB4A9;
+  cursor: pointer;
+}
+
+
+
+/* card-3 */
+
+.Sub-cont .Text-main h1{
+  color: #2AB4A9;
+  text-align: center;
+  margin-top: 40px;
+}
+.Sub-cont .Cards-main .card-3{
+  width: 20%;
+  border: 2px solid chocolate;
+  height: 40vh;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 40px;
+
+}
+.Sub-cont .Cards-main .card-3:hover{
+  background-color: blue;
+  transition: all 1.5s;
+}
+.Sub-cont .Cards-main .card-3 h2,p:hover{
+  background-color: blue;
+}
+.Sub-cont .Cards-main .card-3 h2{
+  margin-top: 25px;
+  color: #eee;
+}
+.Sub-cont .Cards-main .card-3 p{
+  margin-top: 25px;
+  color: #eee;
+  line-height: 28px;
+}
+.Sub-cont .Cards-main .card-3 button{
+  margin-top: 30px;
+  background-color: chocolate;
+  border-radius: 10px;
+  width: 100px;
+  height: 5vh;
+}
+.Sub-cont .Cards-main .card-3 button:hover{
+  background-color: #2AB4A9;
+  cursor: pointer;
+}
+
+.last-input{
+  text-align: center;
+}
+.last-input input{
+  width: 500px;
+  height: 20vh;
+  background-color: #eee;
+  margin-top: 30px;
+  border-radius: 20px;
+  outline: none;
+}
+.last-input button{
+  background-color: chocolate;
+  width: 150px;
+  height: 6vh;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.last-input button:hover{
+  background-color: #2AB4A9;
+  cursor: pointer;
+}
+.Footer{
+  margin-top: 20px;
+}
+.Footer h2{
+  background-color: #eee;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 10vh;
+}
+
+
