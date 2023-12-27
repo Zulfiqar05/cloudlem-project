@@ -10,8 +10,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/main" element={<Main />} />
+          
         </Routes>
       </Router>
+      <Main />
     </div>
   );
 }
